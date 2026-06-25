@@ -2,6 +2,8 @@ name: Sync Renewlet Upstream
 
 on:
   workflow_dispatch:
+  schedule:
+    - cron: '0 19 * * *'  # 每天 19:00 UTC (东八区凌晨3点)
 
 permissions:
   contents: write
